@@ -3,7 +3,7 @@ select.addEventListener("change",function(e){
     let ci=select.value;
     //console.log(ci);
     let xhr=new XMLHttpRequest();
-    xhr.open('GET','http://api.openweathermap.org/data/2.5/weather?q='+ci+'&appid=2b154e7a5ddb69453c74a6ce343ee15d');
+    xhr.open('GET','https://api.openweathermap.org/data/2.5/weather?q='+ci+'&appid=2b154e7a5ddb69453c74a6ce343ee15d');
     xhr.onload=function()
     {
         let da=JSON.parse(xhr.response);    //converting json data to js object 
